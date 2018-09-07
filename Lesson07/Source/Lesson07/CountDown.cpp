@@ -21,7 +21,13 @@ void ACountDown::BeginPlay()
 {
 	Super::BeginPlay();
 	UpdateCountTimeDisplay();
-	GetWorldTimerManager().SetTimer(CountDownTimeHandle, this, &ACountDown::AdvanceTimer, true, 1.0f);
+	//	Handle
+	//	Banben
+	//	方法
+	//	间隔时间
+	//	是否循环
+	//	第一次执行提前时间
+	GetWorldTimerManager().SetTimer(CountDownTimeHandle, this, &ACountDown::AdvanceTimer, 2.0f, true, -2);
 }
 
 // Called every frame
